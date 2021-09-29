@@ -8,7 +8,6 @@
 }
 input {
   margin-top: 100px;
-  /* visibility: hidden; */
   z-index: 4;
 }
 .label-input,
@@ -30,4 +29,22 @@ input {
 .item {
   display: flex;
   justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #b9ecfa;
+}
+.img{
+  width: 60px;
+  height: auto;
+}
+.btn-del{
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
 }

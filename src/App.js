@@ -1,6 +1,7 @@
 
 import './App.css';
 import { useState } from 'react';
+import { IMAGES } from './assets/images';
 
 function App() {
   const [data, setData] = useState([]);
@@ -12,11 +13,12 @@ function App() {
   const setHover = () => {
     setHoverItem(!hover)
   }
-
+  const onDelete=(file)=>{
+    const newData = data.filter(x=>x!== file);
+    setData(newData)
+  }
   const _class = hover ? 'input-file' : '';
-
-  console.log(data)
-
+ 
   return (
     <div className="App">
       <div className='input-wrapper'
@@ -30,13 +32,18 @@ function App() {
           onDragEnter={() => setHover(true)}
           onDrop={() => setHover(false)}
           placeholder=''
+          className={_class}
         />
       </div>
       <div className='file-list'>
         {data.map((item, index) =>
           <div className='item'>
-            <p> {item.name}</p>
-            <p> {item.type}</p>
+            <img alt='null' src={getImageFile(item.type)} className='img'/>
+            <p>{item.name}</p>
+            <p> {Math.round(item.size /1024) } kb</p>
+            <div onClick={()=>onDelete(item)} className='btn-del'>
+              X
+            </div>
           </div>
         )}
       </div>
@@ -45,13 +52,16 @@ function App() {
 }
 
 function getImageFile(file) {
-  switch (file) {
-    case file === '':
+  const type = file.split('/')[1];
 
-      break;
+  switch (type) {
+    case 'jpeg':
+      return IMAGES.jpeg
+    case 'png':
+      return IMAGES.png
 
-    default:
-      break;
+    default: return IMAGES.file
+
   }
 }
 
