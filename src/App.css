@@ -50,6 +50,7 @@ input {
 }
 .layout {
   margin: auto;
+  padding-top: 100px;
 }
 @media screen and (min-width: 450px) {
   .layout {

@@ -5,9 +5,10 @@ import {
     SortableElement,
     SortableHandle
 } from "react-sortable-hoc";
+import '../DragItem/index.scss';
 
 const Handle = SortableHandle(({ tabIndex }) => (
-    <div className='' tabIndex={tabIndex}>
+    <div className='tab-item' tabIndex={tabIndex}>
         <svg viewBox="0 0 50 50">
             <path
                 d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 L 0 7.5 z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 L 0 22.5 z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 L 0 37.5 z"
@@ -32,7 +33,7 @@ const SortableItem = SortableElement(props => {
 const SortableList = SortableContainer(props => {
     const { items, ...restProps } = props;
     return (
-        <div>
+        <div className='grid'>
             {items.map((item, index) => (
                 <SortableItem
                     key={`item-${item.id}`}
@@ -90,7 +91,7 @@ function DragItem(props) {
         setPhotos(arrayMove(photos, oldIndex, newIndex));
     };
     return (
-        <div>
+        <div className='wrapper'>
             <SortableList
                 shouldUseDragHandle={true}
                 useDragHandle
