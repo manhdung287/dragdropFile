@@ -34,11 +34,11 @@ input {
   border-radius: 10px;
   background: #b9ecfa;
 }
-.img{
+.img {
   width: 60px;
   height: auto;
 }
-.btn-del{
+.btn-del {
   background: #fff;
   width: 30px;
   height: 30px;
@@ -47,4 +47,27 @@ input {
   align-items: center;
   border-radius: 50%;
   font-weight: bold;
+}
+.layout {
+  margin: auto;
+}
+@media screen and (min-width: 450px) {
+  .layout {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .layout {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .layout {
+    width: 1280px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .layout {
+    width: 1440px;
+  }
 }
