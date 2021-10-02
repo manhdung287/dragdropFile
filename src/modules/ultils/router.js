@@ -1,4 +1,5 @@
 export const ROUTER= {
     home: '/',
-    drag:'/drag'
+    dragItem:'/drag-item',
+    dragFile:'/drag-file',
 }

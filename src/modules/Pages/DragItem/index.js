@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import {
     arrayMove,
     SortableContainer,
@@ -49,17 +49,20 @@ function DragItem() {
     const onSortEnd = ({ oldIndex, newIndex }) => {
         setPhotos(arrayMove(photos, oldIndex, newIndex));
     };
-
+    const wrapper = useRef();
     return (
-
-        <SortableList
+        <div className='drag-item-container' >
+              <SortableList
             shouldUseDragHandle={true}
             useDragHandle
             axis="xy"
             items={photos}
             onSortEnd={onSortEnd}
+            ref={wrapper}
         />
 
+        </div>
+      
     );
 }
 

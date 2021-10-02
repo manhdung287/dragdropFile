@@ -9,7 +9,10 @@ function Menu() {
             <a href={ROUTER.home} className='nav-item'>
                 Home
             </a>
-            <a href={ROUTER.drag}  className='nav-item'>
+            <a href={ROUTER.dragFile}  className='nav-item'>
+                Drag File
+            </a>
+            <a href={ROUTER.dragItem}  className='nav-item'>
                 Drag - Sort
             </a>
         </div>
