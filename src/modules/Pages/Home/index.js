@@ -1,7 +1,8 @@
 
 
 import { useState } from 'react';
-import { IMAGES } from '../../assets/images';
+import { IMAGES } from '../../../assets/images';
+
 
 function Home() {
   const [data, setData] = useState([]);

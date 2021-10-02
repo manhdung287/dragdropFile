@@ -2,9 +2,10 @@
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
-import Home from './modules/Home';
-import DragItem from './modules/DragItem';
+
 import { ROUTER } from './ultils/router';
+import Home from './modules/Pages/Home';
+import DragItem from './modules/Pages/DragItem';
 
 function App() {
 
