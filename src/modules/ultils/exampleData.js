@@ -55,3 +55,4 @@ export const exampleData =[
         caption: "test 6"
     },
 ]
+export const logoLink ='https://res.cloudinary.com/nextecomerce/image/upload/v1633142761/logo_lfili0.png';

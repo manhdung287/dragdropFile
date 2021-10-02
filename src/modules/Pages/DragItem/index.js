@@ -5,7 +5,8 @@ import {
     SortableElement,
     SortableHandle
 } from "react-sortable-hoc";
-import { exampleData } from '../../../ultils/exampleData';
+import { exampleData } from '../../ultils/exampleData';
+
 
 import './index.scss';
 

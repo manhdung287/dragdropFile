@@ -1,11 +1,12 @@
 
-import './App.css';
+import '../src/assets/styles/index.scss';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 
-import { ROUTER } from './ultils/router';
+
 import Home from './modules/Pages/Home';
 import DragItem from './modules/Pages/DragItem';
+import { ROUTER } from './modules/ultils/router';
 
 function App() {
 
