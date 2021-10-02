@@ -6,9 +6,7 @@ import './Menu.scss';
 function Menu() {
     return (
         <div className='menu'>
-            <a href={ROUTER.home} className='nav-item'>
-                Home
-            </a>
+           
             <a href={ROUTER.dragFile}  className='nav-item'>
                 Drag File
             </a>

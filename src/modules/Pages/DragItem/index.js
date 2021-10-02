@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react';
+import { arrayMoveImmutable } from 'array-move';
+import React, { useState } from 'react';
+
 import {
-    arrayMove,
     SortableContainer,
     SortableElement,
     SortableHandle
@@ -43,26 +44,24 @@ const SortableList = SortableContainer(
 
 
 function DragItem() {
-    const _data = exampleData.sort(()=>Math.random() - 0.5);
+    
+    const _data = exampleData.sort(() => Math.random() - 0.5);
+
     const [photos, setPhotos] = useState(_data);
 
     const onSortEnd = ({ oldIndex, newIndex }) => {
-        setPhotos(arrayMove(photos, oldIndex, newIndex));
+        setPhotos(arrayMoveImmutable(photos, oldIndex, newIndex));
     };
-    const wrapper = useRef();
     return (
-        <div className='drag-item-container' >
+        <div  className='drag-item-container'>
               <SortableList
-            shouldUseDragHandle={true}
-            useDragHandle
-            axis="xy"
-            items={photos}
-            onSortEnd={onSortEnd}
-            ref={wrapper}
-        />
-
+                shouldUseDragHandle={true}
+                useDragHandle
+                axis="xy"
+                items={photos}
+                onSortEnd={onSortEnd}
+            />
         </div>
-      
     );
 }
 
