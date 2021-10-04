@@ -46,26 +46,26 @@
     border-radius: 50%;
     font-weight: bold;
   }
-  .layout {
+  .container {
     margin: auto;
   }
   @media screen and (min-width: 450px) {
-    .layout {
+    .container {
       width: 450px;
     }
   }
   @media screen and (min-width: 720px) {
-    .layout {
+    .container {
       width: 720px;
     }
   }
   @media screen and (min-width: 1280px) {
-    .layout {
+    .container {
       width: 1280px;
     }
   }
   @media screen and (min-width: 1440px) {
-    .layout {
+    .container {
       width: 1440px;
     }
   }

@@ -14,35 +14,32 @@ function DragFile() {
   const setHover = () => {
     setHoverItem(!hover)
   }
-  const onDelete=(file)=>{
-    const newData = data.filter(x=>x!== file);
+  const onDelete = (file) => {
+    const newData = data.filter(x => x !== file);
     setData(newData)
   }
   const _class = hover ? 'input-file' : '';
- 
+
   return (
     <div className="App">
-      <div className='input-wrapper'
-
+      <div
+        onChange={onChange}
+        onDragLeave={() => setHover(false)}
+        onDragEnter={() => setHover(true)}
+        onDrop={() => setHover(false)}
+        className={_class}
       >
-        {/* <label htmlFor='inputFile' className={'label-input ' + _class}>
-          Click here
-        </label> */}
-        <input type='file' value='' onChange={onChange}
-          onDragLeave={() => setHover(false)}
-          onDragEnter={() => setHover(true)}
-          onDrop={() => setHover(false)}
-          placeholder=''
-          className={_class}
+
+        <input type='file' value=''
         />
       </div>
       <div className='file-list'>
         {data.map((item, index) =>
           <div className='item'>
-            <img alt='null' src={getImageFile(item.type)} className='img'/>
+            <img alt='null' src={getImageFile(item.type)} className='img' />
             <p>{item.name}</p>
-            <p> {Math.round(item.size /1024) } kb</p>
-            <div onClick={()=>onDelete(item)} className='btn-del'>
+            <p> {Math.round(item.size / 1024)} kb</p>
+            <div onClick={() => onDelete(item)} className='btn-del'>
               X
             </div>
           </div>
