@@ -1,72 +1,79 @@
-@import './reset.scss';
+@import "./reset.scss";
 
-  .input-wrapper {
-    text-align: center;
-    position: relative;
-  }
-  input {
-    margin-top: 100px;
-    z-index: 4;
-  }
-  .label-input,
-  input {
-    display: block;
-    width: 300px;
-    height: 300px;
-    background: #eee;
-  }
-  .label-input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-  }
-  .input-file {
-    background: #61dafb;
-  }
-  .item {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    background: #b9ecfa;
-  }
-  .img {
-    width: 60px;
-    height: auto;
-  }
-  .btn-del {
-    background: #fff;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-weight: bold;
-  }
+.input-wrapper {
+  text-align: center;
+  position: relative;
+}
+input {
+  margin-top: 100px;
+  z-index: 4;
+}
+.label-input,
+input {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background: #eee;
+}
+.label-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.input-file {
+  background: #61dafb;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #b9ecfa;
+}
+.img {
+  width: 60px;
+  height: auto;
+}
+.btn-del {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.container {
+  margin: auto;
+}
+.btn {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 450px) {
   .container {
-    margin: auto;
+    width: 450px;
   }
-  @media screen and (min-width: 450px) {
-    .container {
-      width: 450px;
-    }
+}
+@media screen and (min-width: 720px) {
+  .container {
+    width: 720px;
   }
-  @media screen and (min-width: 720px) {
-    .container {
-      width: 720px;
-    }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
   }
-  @media screen and (min-width: 1280px) {
-    .container {
-      width: 1280px;
-    }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
   }
-  @media screen and (min-width: 1440px) {
-    .container {
-      width: 1440px;
-    }
-  }
-  
+}
