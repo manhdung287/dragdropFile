@@ -12,4 +12,5 @@ export const IMAGES ={
     upload: require('../assets/images/upload.png').default,
     uploadbg: require('../assets/images/bgupload.png').default,
     word: require('../assets/images/word.png').default,
+    zip: require('../assets/images/zip.png').default,
 }

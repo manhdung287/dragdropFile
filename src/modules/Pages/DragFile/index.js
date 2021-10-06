@@ -53,8 +53,14 @@ function imageFiletype(type) {
       return IMAGES.media
     case 'text/html':
       return IMAGES.html
+    case 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+      return IMAGES.exel
+    case 'application/x-zip-compressed':
+      return IMAGES.zip
     default:
       return IMAGES.file;
+
+
   }
 }
 export default DragFile;
