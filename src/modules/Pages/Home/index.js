@@ -1,11 +1,19 @@
+import { banner } from '../../ultils/exampleData';
+import styles from './index.module.scss';
 
 function Home() {
 
- 
+
   return (
-    <div className="app">
-      Chào mừng đến website
+    <div className={styles.wrapper}>
+      <div className={styles.banner}>
+      <img src={banner} alt='banner'/>
+      </div>
+      <div className="container">
+        Chào mừng đến website
+      </div>
     </div>
+
   );
 }
 

@@ -16,6 +16,7 @@ function BuilderPage(props) {
         });
         setEditor(editor);
     },[])
+    console.log(editor);
     return (
         <div className={styles.wrapper}>
             <div id='editor'>

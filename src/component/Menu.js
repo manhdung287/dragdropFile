@@ -13,6 +13,9 @@ function Menu() {
             <a href={ROUTER.dragItem}  className='nav-item'>
                 Drag - Sort
             </a>
+            <a href={ROUTER.buildPage}  className='nav-item'>
+                Build Page
+            </a>
         </div>
     );
 }

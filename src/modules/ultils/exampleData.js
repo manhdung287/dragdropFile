@@ -56,3 +56,5 @@ export const exampleData =[
     },
 ]
 export const logoLink ='https://res.cloudinary.com/nextecomerce/image/upload/v1633142761/logo_lfili0.png';
+
+export const banner ='https://res.cloudinary.com/dport/image/upload/v1633507542/man-sea-coast-water-ocean-horizon-312-pxhere.com_ev5z9h.jpg';
