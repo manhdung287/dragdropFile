@@ -10,5 +10,6 @@ export const IMAGES ={
     png: require('../assets/images/png.png').default,
     pp: require('../assets/images/pp.png').default,
     upload: require('../assets/images/upload.png').default,
+    uploadbg: require('../assets/images/bgupload.png').default,
     word: require('../assets/images/word.png').default,
 }
