@@ -14,3 +14,13 @@
 .menuItem{
     color: #fff;
 }
+.scrollUp{
+    background: #000;
+    transition: ease-in-out 0.5s;
+    transform: translateY(0);
+}
+.scrollDown{
+    background: #000;
+    transition: ease-in-out 0.5s;
+    transform: translateY(-100%);
+}
