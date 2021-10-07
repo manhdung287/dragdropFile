@@ -1,12 +1,12 @@
 import React from 'react';
-import { logoLink } from '../modules/ultils/exampleData';
+// import { logoLink } from '../modules/ultils/exampleData';
 import { ROUTER } from '../modules/ultils/router';
-
+import styles from './Logo.module.scss';
 
 function Logo() {
     return (
         <a href={ROUTER.home}>
-            <img src={logoLink} alt='' width={200} className='logo-img'/>
+            <p className={styles.text} >Mạnh Dũng</p>
         </a>
     );
 }
