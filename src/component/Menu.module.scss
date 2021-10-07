@@ -1,0 +1,24 @@
+.wrapper{
+    padding: 20px ;
+}
+.navItem{
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 15px 0;
+    position: relative;
+    &:hover{
+        .border{
+            width: 100%;
+        }
+    }
+}
+.border{
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: #fff;
+    transition: ease-in-out 0.5s;
+}

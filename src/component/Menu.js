@@ -2,19 +2,22 @@ import React from 'react';
 import { ROUTER } from '../modules/ultils/router';
 
 
-import './Menu.scss';
-function Menu() {
+import styles from './Menu.module.scss';
+
+function Menu({ className }) {
     return (
-        <div className='menu'>
-           
-            <a href={ROUTER.dragFile}  className='nav-item'>
-                Drag File
+        <div className={styles.wrapper}>
+            <a href={ROUTER.dragFile} className={styles.navItem + ' ' + className}>
+                <span> Drag File</span>
+                <span className={styles.border} />
             </a>
-            <a href={ROUTER.dragItem}  className='nav-item'>
-                Drag - Sort
+            <a href={ROUTER.dragItem} className={styles.navItem + ' ' + className}>
+                <span> Drag - Sort</span>
+                <span className={styles.border} />
             </a>
-            <a href={ROUTER.buildPage}  className='nav-item'>
-                Build Page
+            <a href={ROUTER.buildPage} className={styles.navItem + ' ' + className}>
+                <span>  Build Page</span>
+                <span className={styles.border} />
             </a>
         </div>
     );
